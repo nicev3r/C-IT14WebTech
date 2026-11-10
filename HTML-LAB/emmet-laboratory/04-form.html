@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Part 9: Creating a Form</h1>
+    <h2>Form Components</h2>
+
+    <form>
+        <!--Emmet: input:text-->
+        <input type="text" name="" id="">
+
+        <!-- Emmet: input:email -->
+        <input type="email" name="" id="">
+
+        <!-- Emmet: input:password -->
+        <input type="password" name="" id="">
+
+        <!-- Emmet: input:checkbox -->
+        <input type="checkbox" name="" id="">
+
+         <!-- Emmet: input:radio -->
+        <input type="radio" name="" id="">
+
+        <!-- Emmet: input:submit -->
+        <input type="submit" value="">
+
+    </form>
+
+     <!-- ========== FORM CHALLENGE: Student Registration Form ========== -->
+
+    <h2>Student Registration Form</h2>
+
+    <form action="" method="post"></form>
+
+    <!-- Student ID (Emmet: input:text) -->
+     <label for="studentId">Student ID:</label><br>
+     <input type="text" name="studentid" id="studentid">
+     <br><br>
+
+     <!-- Full Name (Emmet: input:text) -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" name="fullName" id="fullName">
+        <br><br>
+
+        <!-- Email (Emmet: input:email) -->
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        <!-- Password (Emmet: input:password) -->
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password">
+        <br><br>
+
+        <!-- Gender (Emmet: input:radio) -->
+        <!-- Radio buttons with the same name = only one can be picked -->
+        Gender:<br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <!-- Course (Emmet: select>option*3) -->
+        <label for="course">Course:</label><br>
+        <select name="course" id="course">
+            <option value="BSIT">BSIT</option>
+            <option value="BSCS">BSCS</option>
+            <option value="BSIS">BSIS</option>
+        </select>
+        <br><br>
+
+        <!-- Hobbies (Emmet: input:checkbox) -->
+        <!-- Checkboxes = you can pick more than one -->
+        Hobbies:<br>
+        <input type="checkbox" name="hobbies" id="reading" value="Reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" name="hobbies" id="gaming" value="Gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" name="hobbies" id="music" value="Music">
+        <label for="music">Music</label>
+        <br><br>
+
+        <!-- Address (Emmet: textarea) -->
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" cols="30" rows="4"></textarea>
+        <br><br>
+
+        <!-- Submit button (Emmet: input:submit) -->
+        <input type="submit" value="Register">
+
+    </form>
+
+
+</body>
+</html>

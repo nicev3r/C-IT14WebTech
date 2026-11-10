@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Registration</title>
+</head>
+<body>
+
+  <p>
+    <a href="index.html">HOME</a> |
+    <a href="about.html">ABOUT</a> |
+    <a href="contact.html">CONTACT</a>
+  </p>
+
+  <hr>
+
+  <h1>Student Registration Form</h1>
+
+  <form>
+
+    <label>Full Name:</label><br>
+    <input type="text" placeholder="Enter your full name" required><br><br>
+
+    <label>Student ID:</label><br>
+    <input type="text" placeholder="Enter your student ID" minlength="5" maxlength="10" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" placeholder="Enter your email" required><br><br>
+
+    <label>Password:</label><br>
+    <input type="password" placeholder="Enter your password" minlength="8" maxlength="20" required><br><br>
+
+    <label>Birthday:</label><br>
+    <input type="date" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="female" required> Female
+    <input type="radio" name="gender" value="male"> Male<br><br>
+
+    <label>Program:</label><br>
+    <select required>
+      <option value="">-- Select Program --</option>
+      <option>BS Information Technology</option>
+      <option>BS Computer Science</option>
+      <option>BS Information Systems</option>
+    </select><br><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Gaming
+    <input type="checkbox"> Music
+    <input type="checkbox"> Sports<br><br>
+
+    <label>Address:</label><br>
+    <textarea rows="3" cols="30" placeholder="Enter your address" required></textarea><br><br>
+
+    <label>Comments:</label><br>
+    <textarea rows="3" cols="30" placeholder="Write your comments here"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>
