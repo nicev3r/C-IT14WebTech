@@ -1,0 +1,1378 @@
+commit 581bb55fefc0eca1fa1795f1e9bbb2d39be82f44
+Author:     nicev3r <venicelorenrebosa@gmail.com>
+AuthorDate: 2026-11-10 07:41:27 +0000
+Commit:     nicev3r <venicelorenrebosa@gmail.com>
+CommitDate: 2026-11-10 07:41:27 +0000
+
+    Completed Emmet Laboratory Activity
+
+diff --git a/.vscode/settings.json b/.vscode/settings.json
+new file mode 100644
+index 0000000..6f3a291
+--- /dev/null
++++ b/.vscode/settings.json
+@@ -0,0 +1,3 @@
++{
++    "liveServer.settings.port": 5501
++}
+\ No newline at end of file
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+new file mode 100644
+index 0000000..df2d7e0
+--- /dev/null
++++ b/HTML-LAB/about.html
+@@ -0,0 +1,36 @@
++
++<!DOCTYPE html>
++<html>
++<head>
++  <title>About</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>|
++    <a href="schedule.html">SCHEDULE</a>|
++     <a href="multimedia.html">MULTIMEDIA</a> 
++  </p>
++
++  <hr>
++
++  <h1>About Page</h1>
++
++   <a href="https://www.youtube.com/watch?v=IdZEv52a1ig&list=RDIdZEv52a1ig&start_radio=1" target="_blank">
++    <img
++      src="VenRebosa.jpg"
++      alt="Profile photo"
++      width="200"
++      height="200">
++  </a>
++
++
++  <h2>Venice Loren Rebosa</h2>
++  <p>I am Venice Loren Rebosa, a 2nd year student at the University of the Cordilleras.
++    I am willing to learn this course and apply it to my future works. Hopefully I can 
++    get a Good and proper Job for the Future, so i'll be able to help and make my family happy. </p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..7b2f16b
+--- /dev/null
++++ b/HTML-LAB/contact.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Contact</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h1>Contact Page</h1>
++  <p>Email: venicelorenrebosa@gmail.com</p>
++  <p>Contact: 09063841065</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/01-basic.html b/HTML-LAB/emmet-laboratory/01-basic.html
+new file mode 100644
+index 0000000..c442471
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/01-basic.html
+@@ -0,0 +1,46 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Basic Emmet Shortcuts</title>
++</head>
++<body>
++
++    <!-- header (Emmet: header) -->
++    <header>
++        <!-- h1 (Emmet: h1) -->
++        <h1>My Emmet Page</h1>
++
++        <!-- nav (Emmet: nav) -->
++        <nav>
++            Home | About | Contact
++        </nav>
++    </header>
++
++    <!-- main (Emmet: main) -->
++    <main>
++
++        <!-- h2 x2 (Emmet: h2*2) -->
++        <h2>First Heading 2</h2>
++        <h2>Second Heading 2</h2>
++
++        <!-- p x3 (Emmet: p*3) -->
++        <p>This is the first paragraph.</p>
++        <p>This is the second paragraph.</p>
++        <p>This is the third paragraph.</p>
++
++        <!-- div (Emmet: div) -->
++        <div>
++            This is a div container.
++        </div>
++
++    </main>
++
++    <!-- footer (Emmet: footer) -->
++    <footer>
++        <p>Footer: Made using Emmet</p>
++    </footer>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/02-classes-ids.html b/HTML-LAB/emmet-laboratory/02-classes-ids.html
+new file mode 100644
+index 0000000..49f70c5
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/02-classes-ids.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>02-CLASSES </title>
++</head>
++<body>
++    
++<!--PRACTICE-->
++<!-- 1. Class (Emmet: p.introduction) -->
++<p class="introduction">This is a paragraph with a class.</p>
++
++<!-- 2. ID (Emmet: div#container) -->
++<div id="container">This is a div with an ID.</div>
++
++<!-- 3. Multiple Classes (Emmet: div.card.featured) -->
++<div class="card featured"> This div has two classes.</div>
++
++<!-- TASK -->
++
++<!-- header with class site-header (Emmet: header.site-header) -->
++<header class="site-header">
++        <h1>My Website</h1>
++    </header>
++
++<!-- nav with ID main-nav (Emmet: nav#main-nav) -->
++<nav id="main-nav">
++    Home | About | Contact
++ </nav>
++
++ <!-- main with class content (Emmet: main.content) -->
++    <main class="content">
++
++        <!-- 4. ID + Class (Emmet: section#about.content-section) -->
++        <!-- This section is also the "section with ID about" from the task -->
++        <section id="about" class="content-section">
++            <h2>About Me</h2>
++            <p>This is the about section.</p>
++        </section>
++
++    </main>
++
++    <!-- footer with class site-footer (Emmet: footer.site-footer) -->
++    <footer class="site-footer">
++        Footer: Made using Emmet
++    </footer>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/03-child-sibling.html b/HTML-LAB/emmet-laboratory/03-child-sibling.html
+new file mode 100644
+index 0000000..783e9d0
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/03-child-sibling.html
+@@ -0,0 +1,77 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Child and Sibling Operators Practice</title>
++</head>
++<body>
++
++    <h1>Part 4: Child and Sibling Operators</h1>
++
++    <!-- ========== A. CHILD OPERATOR (>) ========== -->
++
++    <h2>A. Child Operator</h2>
++
++    <!-- Emmet: ul>li -->
++    <ul>
++        <li>One list item</li>
++    </ul>
++
++    <!-- Task 1. Emmet: nav>ul>li -->
++    <nav>
++        <ul>
++            <li>Home</li>
++        </ul>
++    </nav>
++
++    <!-- Task 2. Emmet: nav>ul>li*5 -->
++    <nav>
++        <ul>
++            <li>Home</li>
++            <li>About</li>
++            <li>Services</li>
++            <li>Gallery</li>
++            <li>Contact</li>
++        </ul>
++    </nav>
++
++    <!-- ========== B. SIBLING OPERATOR (+) ========== -->
++
++    <h2>B. Sibling Operator</h2>
++
++    <!-- Emmet: h1+p -->
++    <h1>This is a heading 1</h1>
++    <p>This is a paragraph.</p>
++
++    <!-- Task. Emmet: h1+h2+p+p -->
++    <h1>Main Heading</h1>
++    <h2>Sub Heading</h2>
++    <p>This is the first paragraph.</p>
++    <p>This is the second paragraph.</p>
++
++    <!-- ========== C. MULTIPLICATION OPERATOR (*) ========== -->
++
++    <h2>C. Multiplication Operator</h2>
++
++    <!-- Emmet: li*5 -->
++    <li>Item 1</li>
++    <li>Item 2</li>
++    <li>Item 3</li>
++    <li>Item 4</li>
++    <li>Item 5</li>
++
++    <!-- Task 1. Emmet: div*3 -->
++    <div>Box 1</div>
++    <div>Box 2</div>
++    <div>Box 3</div>
++
++    <!-- Task 2. Emmet: p*5 -->
++    <p>Paragraph 1</p>
++    <p>Paragraph 2</p>
++    <p>Paragraph 3</p>
++    <p>Paragraph 4</p>
++    <p>Paragraph 5</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/03-navigation.html b/HTML-LAB/emmet-laboratory/03-navigation.html
+new file mode 100644
+index 0000000..2e1fa68
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/03-navigation.html
+@@ -0,0 +1,47 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>NAVIGATION</title>
++</head>
++<body>
++    <H1>PART 6: NUMBERING WITH 1</H1>
++    <!--EMMET: ul>li.item$*5-->
++    <!-- The $ becomes 1,2,3,4,5 inside the class name-->
++
++    <ul>
++        <li class="item1"></li>
++        <li class="item2"></li>
++        <li class="item3"></li>
++        <li class="item4"></li>
++        <li class="item5"></li>
++    </ul>
++
++    <!--Now i practice these: ul>li{Menu $}*5-->
++    <ul>
++        <li>Menu 1</li>
++        <li>Menu 2</li>
++        <li>Menu 3</li>
++        <li>Menu 4</li>
++        <li>Menu 5</li>
++    </ul>
++
++    <!--This is the Challenge:NAVIGATION MENU -->
++    <!--nav>ul>li{Home}+li{About}+li{Services}+li{Project}+li{Contact}-->
++
++    <nav>
++        <ul>
++            <li>Home</li>
++            <li>About</li>
++            <li>Services</li>
++            <li>Project</li>
++            <li>Contact</li>
++        </ul>
++    </nav>
++
++    
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/04-adding-text.html b/HTML-LAB/emmet-laboratory/04-adding-text.html
+new file mode 100644
+index 0000000..47662e4
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/04-adding-text.html
+@@ -0,0 +1,23 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Adding Text with Curly Braces </title>
++</head>
++<body>
++    <!-- Emmet: h1{Web Technologies}-->
++    <h1>Web Technologies</h1>
++
++    <!-- Lets try to p-->
++    <p>Welcome to my Webpage</p>
++
++    <!-- Emmet: h1{My Web Development Journey} -->
++    <h1>My Web Development Journey</h1>
++
++    <!-- Emmet: p{I am Learning HTML, this emmet the shortcuts and web development}-->
++    <p>I am Learning HTML, this emmet the shortcuts and web development</p>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/04-form.html b/HTML-LAB/emmet-laboratory/04-form.html
+new file mode 100644
+index 0000000..b601b81
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/04-form.html
+@@ -0,0 +1,100 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Forms</title>
++</head>
++<body>
++    <h1>Part 9: Creating a Form</h1>
++    <h2>Form Components</h2>
++
++    <form>
++        <!--Emmet: input:text-->
++        <input type="text" name="" id="">
++
++        <!-- Emmet: input:email -->
++        <input type="email" name="" id="">
++
++        <!-- Emmet: input:password -->
++        <input type="password" name="" id="">
++
++        <!-- Emmet: input:checkbox -->
++        <input type="checkbox" name="" id="">
++
++         <!-- Emmet: input:radio -->
++        <input type="radio" name="" id="">
++
++        <!-- Emmet: input:submit -->
++        <input type="submit" value="">
++
++    </form>
++
++     <!-- ========== FORM CHALLENGE: Student Registration Form ========== -->
++
++    <h2>Student Registration Form</h2>
++
++    <form action="" method="post"></form>
++
++    <!-- Student ID (Emmet: input:text) -->
++     <label for="studentId">Student ID:</label><br>
++     <input type="text" name="studentid" id="studentid">
++     <br><br>
++
++     <!-- Full Name (Emmet: input:text) -->
++        <label for="fullName">Full Name:</label><br>
++        <input type="text" name="fullName" id="fullName">
++        <br><br>
++
++        <!-- Email (Emmet: input:email) -->
++        <label for="email">Email:</label><br>
++        <input type="email" name="email" id="email">
++        <br><br>
++
++        <!-- Password (Emmet: input:password) -->
++        <label for="password">Password:</label><br>
++        <input type="password" name="password" id="password">
++        <br><br>
++
++        <!-- Gender (Emmet: input:radio) -->
++        <!-- Radio buttons with the same name = only one can be picked -->
++        Gender:<br>
++        <input type="radio" name="gender" id="male" value="Male">
++        <label for="male">Male</label>
++        <input type="radio" name="gender" id="female" value="Female">
++        <label for="female">Female</label>
++        <br><br>
++
++        <!-- Course (Emmet: select>option*3) -->
++        <label for="course">Course:</label><br>
++        <select name="course" id="course">
++            <option value="BSIT">BSIT</option>
++            <option value="BSCS">BSCS</option>
++            <option value="BSIS">BSIS</option>
++        </select>
++        <br><br>
++
++        <!-- Hobbies (Emmet: input:checkbox) -->
++        <!-- Checkboxes = you can pick more than one -->
++        Hobbies:<br>
++        <input type="checkbox" name="hobbies" id="reading" value="Reading">
++        <label for="reading">Reading</label>
++        <input type="checkbox" name="hobbies" id="gaming" value="Gaming">
++        <label for="gaming">Gaming</label>
++        <input type="checkbox" name="hobbies" id="music" value="Music">
++        <label for="music">Music</label>
++        <br><br>
++
++        <!-- Address (Emmet: textarea) -->
++        <label for="address">Address:</label><br>
++        <textarea name="address" id="address" cols="30" rows="4"></textarea>
++        <br><br>
++
++        <!-- Submit button (Emmet: input:submit) -->
++        <input type="submit" value="Register">
++
++    </form>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/05-nav-links.html b/HTML-LAB/emmet-laboratory/05-nav-links.html
+new file mode 100644
+index 0000000..194f591
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/05-nav-links.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Creating Navigation</title>
++</head>
++<body>
++    
++<h1>Part 7: Practicing emmet in creating navigation</h1>
++<!-- Emmet: nav>ul>li*5>a -->
++<!-- Each li has a link (a) inside -->
++
++<nav>
++    <ul>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++        <li><a href=""></a></li>
++    </ul>
++</nav>
++
++<!-- Now try. Emmet: nav>ul>li*5>a{Menu $} -->
++
++<nav>
++    <ul>
++        <li><a href="">Menu 1</a></li>
++        <li><a href="">Menu 2</a></li>
++        <li><a href="">Menu 3</a></li>
++        <li><a href="">Menu 4</a></li>
++        <li><a href="">Menu 5</a></li>
++    </ul>
++</nav>
++
++<!-- CHALLENGE: Navigation menu -->
++<!-- Emmet: nav>ul>li*5>a (then I typed the menu names) -->
++
++<nav>
++    <ul>
++        <li><a href="">Home</a></li>
++        <li><a href="">About</a></li>
++        <li><a href="">Portfolio</a></li>
++        <li><a href="">Services</a></li>
++        <li><a href="">Contact</a></li>
++    </ul>
++</nav>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/05-semantic.html b/HTML-LAB/emmet-laboratory/05-semantic.html
+new file mode 100644
+index 0000000..2a71c14
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/05-semantic.html
+@@ -0,0 +1,58 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantic HTML </title>
++</head>
++<body>
++    <!-- ========== CHALLENGE: Complete Website Structure ========== -->
++
++    <!-- Emmet: header>h1 -->
++    <header>
++        <h1>My Student Website</h1>
++    </header>
++
++    <!-- Emmet: nav>ul>li*4>a -->
++    <nav>
++        <ul>
++            <li><a href="#">Home</a></li>
++            <li><a href="#">About</a></li>
++            <li><a href="#">Projects</a></li>
++            <li><a href="#">Contact</a></li>
++        </ul>
++    </nav>
++
++    <!-- Emmet: main>section>article -->
++
++    <MAIN>
++
++        <SECTION>
++             <h2>Latest Posts</h2>
++
++            <ARTICLE>
++                <h3>My First Article</h3>
++                <p>This is my first article. I am learning how to use Emmet in VS Code.</p>
++            </ARTICLE>
++
++        <ARTICLE>
++            <h3>My Second Article</h3>
++            <p>This is my second article. Semantic HTML makes my code easier to read.</p>
++        </ARTICLE>
++        </SECTION>
++
++         <!-- Emmet: aside -->
++        <aside>
++            <h3>About Me</h3>
++            <p>I am a student studying Web Technologies.</p>
++        </aside>
++    </MAIN>
++
++    <!-- Emmet: footer>p -->
++    <footer>
++        <p>&copy; 2026 My Student Website. All rights reserved.</p>
++    </footer>
++
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/06-attributes.html b/HTML-LAB/emmet-laboratory/06-attributes.html
+new file mode 100644
+index 0000000..56ea8fc
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/06-attributes.html
+@@ -0,0 +1,29 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML Attributes</title>
++</head>
++<body>
++    
++    <H1>Part 8: HTML Attributes</H1>
++
++    <!-- Emmet: input[type="text"] -->
++     <input type="text">
++     <br><br> 
++
++    <!-- Then. Emmet: input[type="text" placeholder="Enter your name"] -->
++     <input type="text" placeholder="Enter your name">
++
++     <!-- Try. Emmet: input[type="email" placeholder="Enter your email"] -->
++    <input type="email" placeholder="Enter your email">
++
++    <!-- Image. Emmet: img[src="images/profile.jpg" alt="Profile Photo"] -->
++    <img src="images/profile.jpg" alt="Profile Photo">
++
++    <!-- Link. Emmet: a[href="https://www.google.com"]{Google} -->
++     <a href="https://www.google.com">Google</a>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/07-complex-emmet.html b/HTML-LAB/emmet-laboratory/07-complex-emmet.html
+new file mode 100644
+index 0000000..22ac3ff
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/07-complex-emmet.html
+@@ -0,0 +1,28 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Complex Emmet Abbreviation</title>
++</head>
++<body>
++
++    <!-- Emmet: div.container>header>h1{My Portfolio}+p{Web Developer}+nav>ul>li*4>a{Menu $} -->
++
++<div class="container">
++    <header>
++        <h1>My Portfolio</h1>
++        <p>Web Developer</p>
++        <nav>
++            <ul>
++                <li><a href="">Menu 1</a></li>
++                <li><a href="">Menu 2</a></li>
++                <li><a href="">Menu 3</a></li>
++                <li><a href="">Menu 4</a></li>
++            </ul>
++        </nav>
++    </header>
++</div>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/08-emmet-challenge.html b/HTML-LAB/emmet-laboratory/08-emmet-challenge.html
+new file mode 100644
+index 0000000..11612f1
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/08-emmet-challenge.html
+@@ -0,0 +1,25 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Emmet Challenge</title>
++</head>
++<body>
++
++    <!-- Emmet: header>h1{My Portfolio}+nav>ul>li*5>a -->
++    <header>
++        <h1>My Portfolio</h1>
++        <nav>
++            <ul>
++                <li><a href="">Home</a></li>
++                <li><a href="">About</a></li>
++                <li><a href="">Skills</a></li>
++                <li><a href="">Projects</a></li>
++                <li><a href="">Contact</a></li>
++            </ul>
++        </nav>
++    </header>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/index.html b/HTML-LAB/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..69b91ce
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/index.html
+@@ -0,0 +1,12 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>emmet</title>
++</head>
++<body>
++    <!-- Part 1: This was made by typing ! and pressing Tab -->
++    <h1>Emmet works!</h1>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/emmet-laboratory/portfolio.html b/HTML-LAB/emmet-laboratory/portfolio.html
+new file mode 100644
+index 0000000..1b62fa4
+--- /dev/null
++++ b/HTML-LAB/emmet-laboratory/portfolio.html
+@@ -0,0 +1,116 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Student Portfolio</title>
++</head>
++<body>
++
++    <!-- ========== HEADER ========== -->
++    <header id="home">
++        <h1>Venice Loren Rebosa</h1>
++        <p>Hi! I am a student who loves learning web development.</p>
++    </header>
++
++    <!-- ========== NAVIGATION ========== -->
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#skills">Skills</a></li>
++            <li><a href="#projects">Projects</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <main>
++
++        <!-- ========== ABOUT SECTION ========== -->
++        <section id="about">
++            <h2>About Me</h2>
++            <img src="VenRebosa.jpg" alt="Profile Photo" width="150">
++            <p>
++                I am a student taking up Information Technology.
++                I like making websites and I am learning HTML, CSS,
++                and JavaScript. My goal is to become a web developer.
++            </p>
++        </section>
++
++        <!-- ========== SKILLS SECTION ========== -->
++        <section id="skills">
++            <h2>Skills</h2>
++            <ul>
++                <li>HTML</li>
++                <li>CSS</li>
++                <li>JavaScript</li>
++                <li>PHP</li>
++                <li>MySQL</li>
++                <li>Git</li>
++            </ul>
++        </section>
++
++        <!-- ========== PROJECTS SECTION ========== -->
++        <section id="projects">
++            <h2>Projects</h2>
++
++            <!-- Project card 1 -->
++            <div class="card">
++                <h3>Personal Website</h3>
++                <p>A simple website about me and my hobbies.</p>
++                <a href="#">View Project</a>
++            </div>
++            <br>
++
++            <!-- Project card 2 -->
++            <div class="card">
++                <h3>Student Registration Form</h3>
++                <p>A form that collects student information.</p>
++                <a href="#">View Project</a>
++            </div>
++            <br>
++
++            <!-- Project card 3 -->
++            <div class="card">
++                <h3>Navigation Menu</h3>
++                <p>A navigation menu made using Emmet shortcuts.</p>
++                <a href="#">View Project</a>
++            </div>
++        </section>
++
++        <!-- ========== CONTACT SECTION ========== -->
++        <section id="contact">
++            <h2>Contact Me</h2>
++
++            <form action="" method="post">
++
++                <label for="name">Name:</label><br>
++                <input type="text" name="name" id="name">
++                <br><br>
++
++                <label for="email">Email:</label><br>
++                <input type="email" name="email" id="email">
++                <br><br>
++
++                <label for="subject">Subject:</label><br>
++                <input type="text" name="subject" id="subject">
++                <br><br>
++
++                <label for="message">Message:</label><br>
++                <textarea name="message" id="message" cols="30" rows="5"></textarea>
++                <br><br>
++
++                <input type="submit" value="Send">
++
++            </form>
++        </section>
++
++    </main>
++
++    <!-- ========== FOOTER ========== -->
++    <footer>
++        <p>&copy; 2026 - Venice Loren Rebosa</p>
++    </footer>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..1d56bf4
+--- /dev/null
++++ b/HTML-LAB/formatting.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML  TEXT FORMATTING</title>
++</head>
++<body>
++    <h1> HTML TEXT FORMATTING</h1>
++
++    <p><b>Bold</b> - makes text bold. </p>
++    <p><strong>Strong</strong> - important text</p>
++    <p><i>Italic</i> - slanted text</p>
++    <p><em>Emphasis</em> - emphasized text</p>
++    <p><u>Underline</u> - underlined text</p>
++    <p><mark>Mark</mark> - highlighted text</p>
++    <p><small>Small</small> - smaller text</p>
++    <p><del>Delete</del> - crossed out text</p>
++    <p><ins>Insert</ins> - added text</p>
++    <p>H<sub>2</sub>O - subscript, text goes down</p>
++    <p>x<sup>2</sup> - superscript, text goes up</p>
++
++
++     <hr>
++
++    <h2>Challenge</h2>
++    <p>H<sub>2</sub>O</p>
++    <p>E = mc<sup>2</sup></p>
++
++
++</body>
++</html>
++
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+new file mode 100644
+index 0000000..f9772a9
+--- /dev/null
++++ b/HTML-LAB/images.html
+@@ -0,0 +1,23 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Images</title>
++</head>
++<body>
++
++  <h1>My Profile</h1>
++  <hr>
++
++  <a href="about.html">
++    <img
++      src="images/profile.jpg"
++      alt="Profile photo"
++      width="200"
++      height="200">
++  </a>
++
++  <h2>Venice Loren Rebosa</h2>
++  <p>I am a 2nd year student at the University of the Cordilleras.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/images/VenRebosa.jpg b/HTML-LAB/images/VenRebosa.jpg
+new file mode 100644
+index 0000000..5c54f01
+Binary files /dev/null and b/HTML-LAB/images/VenRebosa.jpg differ
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+new file mode 100644
+index 0000000..a9e4263
+--- /dev/null
++++ b/HTML-LAB/index.html
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <title>My Personal Page</title>
++</head>
++<body>
++
++  <h1>MY PERSONAL PAGE</h1>
++  <hr>
++
++  <p>Venice Loren Rebosa</p>
++
++  <p>2nd Year Student, University of the Cordilleras</p>
++
++  <h2>About Me</h2>
++  <p>I am a 2nd year student at the University of the Cordilleras interested in web development.</p>
++
++  <p>I enjoy watching dramas, listening to music, and learning new things.</p>
++
++</body>
++</html>
++
++
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Home</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h1>Home Page</h1>
++  <p>Welcome to my website!</p>
++  <p><a href="links.html">Go to Links page</a></p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+new file mode 100644
+index 0000000..62dd65e
+--- /dev/null
++++ b/HTML-LAB/links.html
+@@ -0,0 +1,37 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Links</title>
++</head>
++<body>
++
++  <h1>Links and Navigation</h1>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h2>External Links</h2>
++  <ul>
++    <li><a href="https://www.google.com" target="_blank">Google</a></li>
++    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
++    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
++    <li><a href="https://www.uc-bcf.edu.ph" target="_blank">University of the Cordilleras</a></li>
++  </ul>
++
++  <h2>Challenge</h2>
++  <p><a href="#section">Jump to the bottom section</a></p>
++
++  <br><br><br><br><br><br><br><br><br><br>
++  <br><br><br><br><br><br><br><br><br><br>
++  <br><br><br><br><br><br><br><br><br><br>
++
++  <h2 id="section">This is the section</h2>
++  <p>You jumped here using a link.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..76c6285
+--- /dev/null
++++ b/HTML-LAB/lists.html
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>HTML Lists</title>
++</head>
++<body>
++
++  <h2>B. Ordered List</h2>
++  <h3>Top 5 Programming Languages</h3>
++  <ol>
++    <li>JavaScript</li>
++    <li>Python</li>
++    <li>Java</li>
++    <li>PHP</li>
++    <li>C#</li>
++  </ol>
++
++  <h2>C. Nested List</h2>
++  <ul>
++    <li>Computer Science
++      <ul>
++        <li>Programming
++          <ul>
++            <li>Java</li>
++            <li>Python</li>
++            <li>PHP</li>
++          </ul>
++        </li>
++        <li>Web Development
++          <ul>
++            <li>HTML</li>
++            <li>CSS</li>
++            <li>JavaScript</li>
++          </ul>
++        </li>
++      </ul>
++    </li>
++  </ul>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/multimedia.html b/HTML-LAB/multimedia.html
+new file mode 100644
+index 0000000..0da5d45
+--- /dev/null
++++ b/HTML-LAB/multimedia.html
+@@ -0,0 +1,51 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Multimedia</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="formatting.html">FORMATTING</a> |
++    <a href="lists.html">LISTS</a> |
++    <a href="links.html">LINKS</a> |
++    <a href="images.html">IMAGES</a> |
++    <a href="schedule.html">SCHEDULE</a> |
++    <a href="registration.html">REGISTRATION</a> |
++    <a href="semantic.html">SEMANTIC</a> |
++    <a href="multimedia.html">MULTIMEDIA</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h1>Multimedia</h1>
++
++  <h2>Image</h2>
++  <img src="VenRebosa.jpg" alt="Profile photo" width="200" height="200">
++
++  <h2>Audio</h2>
++  <audio controls>
++    <source src="song.mp3" type="audio/mpeg">
++    Your browser does not support audio.
++  </audio>
++
++  <h2>Video</h2>
++  <video controls width="400">
++    <source src="video.mp4" type="video/mp4">
++    Your browser does not support video.
++  </video>
++
++  <h2>Embedded Educational Video</h2>
++  <iframe
++    width="400"
++    height="250"
++    src="https://www.youtube.com/embed/VUQUaVirlNs"
++    title="Educational video"
++    allowfullscreen>
++  </iframe>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+new file mode 100644
+index 0000000..a46301d
+--- /dev/null
++++ b/HTML-LAB/registration.html
+@@ -0,0 +1,65 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Student Registration</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h1>Student Registration Form</h1>
++
++  <form>
++
++    <label>Full Name:</label><br>
++    <input type="text" placeholder="Enter your full name" required><br><br>
++
++    <label>Student ID:</label><br>
++    <input type="text" placeholder="Enter your student ID" minlength="5" maxlength="10" required><br><br>
++
++    <label>Email:</label><br>
++    <input type="email" placeholder="Enter your email" required><br><br>
++
++    <label>Password:</label><br>
++    <input type="password" placeholder="Enter your password" minlength="8" maxlength="20" required><br><br>
++
++    <label>Birthday:</label><br>
++    <input type="date" required><br><br>
++
++    <label>Gender:</label><br>
++    <input type="radio" name="gender" value="female" required> Female
++    <input type="radio" name="gender" value="male"> Male<br><br>
++
++    <label>Program:</label><br>
++    <select required>
++      <option value="">-- Select Program --</option>
++      <option>BS Information Technology</option>
++      <option>BS Computer Science</option>
++      <option>BS Information Systems</option>
++    </select><br><br>
++
++    <label>Hobbies:</label><br>
++    <input type="checkbox"> Reading
++    <input type="checkbox"> Gaming
++    <input type="checkbox"> Music
++    <input type="checkbox"> Sports<br><br>
++
++    <label>Address:</label><br>
++    <textarea rows="3" cols="30" placeholder="Enter your address" required></textarea><br><br>
++
++    <label>Comments:</label><br>
++    <textarea rows="3" cols="30" placeholder="Write your comments here"></textarea><br><br>
++
++    <button type="submit">Submit</button>
++    <button type="reset">Reset</button>
++
++  </form>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+new file mode 100644
+index 0000000..ec93d7c
+--- /dev/null
++++ b/HTML-LAB/schedule.html
+@@ -0,0 +1,90 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Class Schedule</title>
++</head>
++<body>
++
++  <p>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </p>
++
++  <hr>
++
++  <h1>My Weekly Class Schedule</h1>
++
++  <table border="1" cellpadding="8">
++    <tr>
++      <th>Day</th>
++      <th>Time</th>
++      <th>Subject</th>
++      <th>Room</th>
++      <th>Instructor</th>
++    </tr>
++
++    <!-- Monday and Wednesday -->
++    <tr>
++      <td rowspan="2">Mon / Wed</td>
++      <td>7:30 - 8:50 AM</td>
++      <td>CC5 Information Data (Lecture)</td>
++      <td>-</td>
++      <td>Aisha</td>
++    </tr>
++    <tr>
++      <td>8:50 - 10:10 AM</td>
++      <td>CC5 Information Data (Laboratory)</td>
++      <td>-</td>
++      <td>Aisha</td>
++    </tr>
++
++    <!-- Friday -->
++    <tr>
++      <td>Friday</td>
++      <td>8:50 - 10:10 AM</td>
++      <td>CC5 Information Data (Laboratory)</td>
++      <td>-</td>
++      <td>Aisha</td>
++    </tr>
++
++    <!-- Tuesday, Thursday, Saturday -->
++    <tr>
++      <td rowspan="4">Tue / Thu / Sat</td>
++      <td>7:30 - 8:50 AM</td>
++      <td>CIT 1</td>
++      <td>-</td>
++      <td>Ortiz</td>
++    </tr>
++    <tr>
++      <td>8:50 - 10:10 AM</td>
++      <td>CIT 5</td>
++      <td>-</td>
++      <td>Meing</td>
++    </tr>
++    <tr>
++      <td>10:10 - 11:30 AM</td>
++      <td colspan="3">Vacant</td>
++    </tr>
++    <tr>
++      <td>11:30 AM - 12:50 PM</td>
++      <td>Laboratory</td>
++      <td>-</td>
++      <td>-</td>
++    </tr>
++
++    <!-- Tuesday and Thursday only -->
++    <tr>
++      <td>Tue / Thu</td>
++      <td>12:50 - 2:10 PM</td>
++      <td>Lecture</td>
++      <td>-</td>
++      <td>Sir Prim</td>
++    </tr>
++  </table>
++
++  <br>
++  <a href="about.html">Go to About Page</a>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/semantic.html b/HTML-LAB/semantic.html
+new file mode 100644
+index 0000000..22069bb
+--- /dev/null
++++ b/HTML-LAB/semantic.html
+@@ -0,0 +1,55 @@
++<!DOCTYPE html>
++<html>
++<head>
++  <title>Semantic Elements</title>
++</head>
++<body>
++
++  <header>
++    <h1>My Web Development Page</h1>
++  </header>
++
++  <nav>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="contact.html">CONTACT</a>
++  </nav>
++
++  <hr>
++
++  <main>
++
++    <article>
++      <h2>The Importance of Web Development Skills</h2>
++
++      <section>
++        <h3>Why It Matters</h3>
++        <p>Web development skills help us build websites and apps that people use every day.</p>
++      </section>
++
++      <section>
++        <h3>Job Opportunities</h3>
++        <p>Many companies need web developers, so learning these skills can help us find good jobs in the future.</p>
++      </section>
++
++      <section>
++        <h3>Problem Solving</h3>
++        <p>Building websites teaches us to think logically and fix problems step by step.</p>
++      </section>
++    </article>
++
++    <aside>
++      <h3>Did You Know?</h3>
++      <p>HTML, CSS, and JavaScript are the three main languages of the web.</p>
++    </aside>
++
++  </main>
++
++  <hr>
++
++  <footer>
++    <p>Venice Loren Rebosa - University of the Cordilleras</p>
++  </footer>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/video.mp4 b/HTML-LAB/video.mp4
+new file mode 100644
+index 0000000..3bf0136
+Binary files /dev/null and b/HTML-LAB/video.mp4 differ
+diff --git a/README.md b/README.md
+deleted file mode 100644
+index d657b28..0000000
+--- a/README.md
++++ /dev/null
+@@ -1 +0,0 @@
+-# C-IT14WebTech
+\ No newline at end of file
+
+commit 159738fe375e59646f2c74f885a5bf52cd6b954e
+Author:     nicev3r <venicelorenrebosa@gmail.com>
+AuthorDate: 2026-11-10 09:45:49 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-11-10 09:45:49 +0800
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..d657b28
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# C-IT14WebTech
+\ No newline at end of file
