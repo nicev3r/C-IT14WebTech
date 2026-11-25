@@ -106,3 +106,24 @@ body {
     vertical-align: top;
 
 }
+
+/*lab5*/
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 220px;
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  height: auto;
+  margin: 0;
+}
