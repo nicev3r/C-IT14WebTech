@@ -1,5 +1,7 @@
+/* Lab 1 */
+
 body {
-    background-color: darkgrey;
+    background-color: f4f4f4;
     font-family:Arial,sans-serif;
     padding:20px;
 }
@@ -9,7 +11,7 @@ p{
 }
 
 
-
+/* Lab 2 */
 h1{
     color:navy;
     text-transform: uppercase;
@@ -36,4 +38,41 @@ h1{
 
 h2, h3 {
     color: darkgreen;
+}
+
+/*lab3*/
+
+body {
+    background-color: f4f4f4;
+    color: #333333;
+}
+
+h1 {
+    font-size: 32px;
+    color: 145da0;
+    text-align: center;
+    text-transform: none;
+}
+
+h2{
+    font-size: 22px;
+    color: darkgreen;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul{
+    line-height: 1.8;
+}
+
+a{
+    color: #145da0;
+    text-decoration: none;
+}
+
+a: hover {
+    text-decoration: underline;
 }
