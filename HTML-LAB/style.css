@@ -7,3 +7,33 @@ body {
 p{
     font-size: 16px;
 }
+
+
+
+h1{
+    color:navy;
+    text-transform: uppercase;
+}
+
+#page-title{
+    text-align: center;
+}
+
+.card {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin: 10px;
+    border:2px solid black;
+}
+
+.card p {
+    color: #444444;
+}
+
+.card .highlight {
+    color: red; 
+}
+
+h2, h3 {
+    color: darkgreen;
+}
