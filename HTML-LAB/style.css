@@ -76,3 +76,33 @@ a{
 a: hover {
     text-decoration: underline;
 }
+
+
+/*lab4*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: f4f4f4;
+    padding: 20px;
+}
+
+.intro{
+    text-align: center;
+}
+
+.card {
+    width: 280px;
+    height: 260px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+
+}
